@@ -1,0 +1,36 @@
+RewriteEngine On
+
+#personalizar errores de navegador
+#error/
+#error/
+#error/
+
+#RewriteCond %{HTTP_HOST} ^www.tecompro.do
+#RewriteRule (.*) http://tecompro.do/$1 [R=301,L]
+
+#solo controlador
+RewriteRule ^([a-zA-Z0-9_-]+)\/$ index.php?action=$1 [S]
+
+#dos parametros
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/*$ index.php?action=$1&ide=$2 [L]
+
+
+
+
+#cuatro parametro
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/*$ index.php?action=$1&ide=$2&m=$3&ide4=$4 [S]
+
+#tres parametros
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/*$ index.php?action=$1&ide=$2&m=$3 [L]
+
+#5 parametro
+#RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/*$ index.php?action=$1&ide=$2&m=$3&ide4=$4&ide5=$5 [L]
+
+
+
+#programa detalle
+
+#RewriteRule ^.*/([a-zA-Z0-9_-]+)\/$ index.php?action=programa-detalle&idb=$1 [S]
+
+
+
