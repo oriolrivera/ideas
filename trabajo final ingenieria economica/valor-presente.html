@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Home</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.css">
+
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+		<script href="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".dropdown-toggle").dropdown();
+			});
+		</script>
+
+	</head>
+	<body>
+
+		<div class="navbar navbar-static-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a href="#" class="brand">
+					Ingeniería económica
+					</a>
+					<ul class="nav">
+						<li><a href="index.html">Determinar valor futuro</a></li>
+						<li class="divider-vertical"></li>
+
+						<li class="active"><a href="valor-presente.html">Determinar valor presente</a></li>
+						<li class="divider-vertical"></li>
+
+						<li><a href="dado-serie-de-pagos-a-determinar-p.html">Dado serie de pagos (A) determinar (P)</a></li>
+						<li class="divider-vertical"></li>
+					
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Mas
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="dado-p-determinar-series-de-pagos-a.html">Dado P, determinar series de pagos (A)</a></li>
+					
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="push"></div>
+
+		<dic class="container">
+			<div class="row">
+				<div class="span9">
+					<div class="span12">
+					
+						<h3>Dado (F), determinar (P)</h3>
+
+						<h3>P = F/(1+i)^n</h3>
+
+						<form action="" class="form-horizontal">
+
+							<div class="control-group">
+									<label for="ape" class="control-label">F:</label>
+								<div class="controls">
+									<input type="text" name="f" id="f">
+								</div>
+							</div>
+							
+							<div class="control-group">
+									<label for="ape" class="control-label">N:</label>
+								<div class="controls">
+									<input type="text" name="n" id="n" placeholder="Años">
+								</div>
+							</div>
+
+							<div class="control-group">
+									<label for="ape" class="control-label">I:</label>
+								<div class="controls">
+									<input type="text" name="i" id="i" placeholder="%">
+								</div>
+							</div>
+
+							
+
+							<div class="control-group">
+									<label for="nom" class="control-label">P = :</label>
+								<div class="controls">
+									<input type="text" name="p" id="p">
+								</div>
+							</div>
+
+							<div class="control-group">
+									
+								<div class="controls">
+									<button type="button" id="calcValorPresente" class="btn btn-primary">Calcular</button>
+								</div>
+							</div>
+
+				
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</dic>
+	</body>
+</html>
