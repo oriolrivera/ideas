@@ -1,0 +1,12 @@
+#loader{position: fixed; left: 0px; top: 0px; height: 100%; width: 100%; z-index: 10000; background-color: #bf166b; opacity: 0.9}
+#loader img{position: absolute; left: 39%; top: 35%;}
+
+@media(max-width:500px) {
+    #loader img{position: absolute; left: 40%; top: 40%;}
+}
+
+.infowindow-wrapper {
+	line-height: 1.35;
+	overflow: hidden;
+	white-space: nowrap;
+}
